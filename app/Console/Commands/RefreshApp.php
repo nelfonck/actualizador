@@ -59,7 +59,7 @@ class RefreshApp extends Command
             return;
         }
 
-        if(!$this->runComposer()) {
+        /*if(!$this->runComposer()) {
 
             $this->error("Error while updating composer files. \nLogs:");
 
@@ -68,7 +68,7 @@ class RefreshApp extends Command
             }
 
             return;
-        }
+        }*/
 
         $this->info("Succesfully updated the application.");
 
