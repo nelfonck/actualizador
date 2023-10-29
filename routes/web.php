@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('updateapp', 'App\Http\Controllers\UpdateController@updateApp');
