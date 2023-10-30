@@ -10,7 +10,7 @@ class UpdateController extends Controller
     // Update the app
     public function updateApp(Request $request){
 
-        Artisan::call('app:refresh',[]);
+        Artisan::queue('app:refresh',[]);
 
         return Response()->json(['statusCode' => 200, 'message' => 'App has been updated'],200);
     }
