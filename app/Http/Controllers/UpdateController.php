@@ -13,5 +13,7 @@ class UpdateController extends Controller
         Artisan::call('app:refresh', [
             'user' => 1, '--queue' => 'default'
         ]);
+
+        return Response()->json(['statusCode' => 200, 'message' => 'App has been updated'],200);
     }
 }
